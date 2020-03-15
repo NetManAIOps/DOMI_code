@@ -7,11 +7,11 @@ class ExpConfig(spt.Config):
     noExp               = 1
     GPU_number          = '0'
     channels_last       = True
-    datapathForTrain    = "../../publicDataset/train_data"
-    datapathForTest     = "../../publicDataset/test_data"
+    datapathForTrain    = "../OMI_dataset/publicDataset/train_data"
+    datapathForTest     = "../OMI_dataset/publicDataset/test_data"
     dataReadformat      = "each"                           # or all
-    labelpath           = "../../publicDataset/test_label/"
-    interpret_filepath  = "../../publicDataset/interpretation_label.txt"
+    labelpath           = "../OMI_dataset/publicDataset/test_label/"
+    interpret_filepath  = "../OMI_dataset/publicDataset/interpretation_label.txt"
     result_dir          = "results"
 
     # model parameters
