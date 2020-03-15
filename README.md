@@ -52,10 +52,10 @@ python domi.py --noExp=2 --max_epoch=100 --initial_lr=0.0001
 
 ### Dataset Information
 
-| Dataset name| <br> time length of </br> each instance | <br> metric number of </br> each instance | <br> matrix shape of </br> each instance |
+| Dataset name|time length of <br> each instance </br>  |metric number of <br> each instance </br>| matrix shape of <br> each instance </br>  |
 |:------:|:----:|:--------:|:-----:|
 | OMI_dataset | 288 | 19 | 19 * 288 |
-| Training set size |<br>Outlier Ratio in </br> Training set (%) |Testing set size|<br>Outlier Ratio in </br> Testing set (%)| 
+| **Training set size** |**Outlier Ratio in <br>Training set (%)</br> ** |**Testing set size**|**Outlier Ratio in <br>Testing set (%)</br> **| 
 |  54630 | 18.62 | 27315 | 22.26 |
 
 
