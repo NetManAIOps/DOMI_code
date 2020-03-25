@@ -6,7 +6,7 @@
 DOMI is a VAE-based model which glues one Dimensional Convolution Neural Network and Gaussian Mixture Variational auto-encoder. 
 It aims at detecting outlier machine instances and its core idea is to learn the normal patterns of multivariate time series
 and use the reconstruction probability to do outlier judgment. 
-Moreover, for a detected outlier machine instance, DOMI provides interpretation based on reconstruction probability changes.
+Moreover, for a detected outlier machine instance, DOMI provides interpretation based on reconstruction probability changes of univaraite time series.
 
 
 
