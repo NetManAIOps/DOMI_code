@@ -61,7 +61,7 @@ python domi.py --noExp=2 --max_epoch=100 --initial_lr=0.0001
 
 ### DOMI_dataset
 
-DOMI_dataset (Outlier Machine Instances Dataset) is a server machine dataset collected from a top global Internet company. 
+DOMI_dataset is a server machine dataset collected from a top global Internet company. 
 This dataset contains 1821 machines last for one and a half months, with 5-minute equal-spaced timestamps. 
 Every instance named M-X@D-Y (means machine X at day Y) is a T * M matrix, where M and T are metric number and time points in one day, respectively. 
 In our dataset, each machine is consituted of 19 metrics (i.e., M=19), and each day has 288 time points (i.e., T=288).
