@@ -15,13 +15,13 @@ Moreover, for a detected outlier machine instance, DOMI provides interpretation 
 #### Clone the repo
 
 ```
-git clone https://github.com/smallcowbaby/DOMI_code
+git clone https://github.com/Tsinghuasuya/DOMI_code
 ```
 
 #### Get data from github and unzip 
 
 ```
-git clone https://github.com/smallcowbaby/OMI_dataset && cd OMI_dataset && unzip publicDataset.zip  && cd  ../DOMI_code
+git clone https://github.com/Tsinghuasuya/DOMI_dataset && cd DOMI_dataset && unzip publicDataset.zip  && cd  ../DOMI_code
 ```
 
 
@@ -54,14 +54,14 @@ python domi.py --noExp=2 --max_epoch=100 --initial_lr=0.0001
 
 | Dataset name|time length of <br> each instance </br>  |metric number of <br> each instance </br>| matrix shape of <br> each instance </br>  |
 |:------:|:----:|:--------:|:-----:|
-| OMI_dataset | 288 | 19 | 19 * 288 |
+| DOMI_dataset | 288 | 19 | 19 * 288 |
 | **Training set size** | **Outlier Ratio in <br>Training set (%)</br>** |**Testing set size**|**Outlier Ratio in <br>Testing set (%)</br>**| 
 |  54630 | 18.62 | 27315 | 22.26 |
 
 
-### OMI_dataset
+### DOMI_dataset
 
-OMI_dataset (Outlier Machine Instances Dataset) is a server machine dataset collected from a top global Internet company. 
+DOMI_dataset (Outlier Machine Instances Dataset) is a server machine dataset collected from a top global Internet company. 
 This dataset contains 1821 machines last for one and a half months, with 5-minute equal-spaced timestamps. 
 Every instance named M-X@D-Y (means machine X at day Y) is a T * M matrix, where M and T are metric number and time points in one day, respectively. 
 In our dataset, each machine is consituted of 19 metrics (i.e., M=19), and each day has 288 time points (i.e., T=288).
@@ -69,7 +69,7 @@ In our dataset, each machine is consituted of 19 metrics (i.e., M=19), and each 
 We divide the overall dataset into two parts, the first month for training and the second half month for testing. 
 For the testing dataset, we provide labels for outlier machine instances, and interpretation labels for outlier instances.
 
-Thus OMI_dataset is made up by the following parts:
+Thus DOMI_dataset is made up by the following parts:
 
 * `train_data/`: Training set.
 * `test_data/`: Testing set.
