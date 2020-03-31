@@ -34,8 +34,8 @@ class ExpConfig(spt.Config):
     batch_size          = 32                    # 32
     initial_lr          = 0.001                 # 0.0005, 0.001
     lr_anneal_factor    = 0.5                   # 0.5, 0.75
-    lr_anneal_epoch_freq= 10                    # 20
-    max_epoch           = 50                    # 100, 200
+    lr_anneal_epoch_freq= 5                     # 20
+    max_epoch           = 10                    # 50, 100, 200
     lr_anneal_step_freq = None
     max_step            = None
     write_summary       = False
