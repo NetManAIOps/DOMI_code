@@ -21,7 +21,7 @@ git clone https://github.com/Tsinghuasuya/DOMI_code
 #### Get data from github and unzip 
 
 ```
-git clone https://github.com/Tsinghuasuya/DOMI_dataset && cd DOMI_dataset && unzip publicDataset.zip  && cd  ../DOMI_code
+git lfs clone https://github.com/Tsinghuasuya/DOMI_dataset && cd DOMI_dataset && unzip publicDataset.zip  && cd  ../DOMI_code
 ```
 
 
