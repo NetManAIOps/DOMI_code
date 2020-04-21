@@ -37,7 +37,7 @@ pip install -r requirements.txt
 #### Run the code
 
 ```
-python domi.py
+cd code && python domi.py
 ```
 
 If you want to change the default configuration, you can edit `ExpConfig` in `config.py` or 
