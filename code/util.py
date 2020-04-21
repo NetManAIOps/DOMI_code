@@ -96,9 +96,6 @@ def get_data_eachday(path, dirPath, timeLength, metricNumber, norm):
 
         norm_matrix = (matrix - m_mean) / m_std
         norm_matrix = np.where(np.isnan(norm_matrix), 0, norm_matrix)
-        norm_matrix = np.where(norm_matrix > 2.5, 2.5, norm_matrix)
-        norm_matrix = np.where(norm_matrix < -2.5, -2.5, norm_matrix)
-        norm_matrix = (norm_matrix + 2.5) / 5.0
         norm_matrix = np.around(norm_matrix, decimals=2)
         norm_matrix = norm_matrix.reshape(-1, timeLength*metricNumber)
         return norm_matrix.tolist(), path, norm_matrix.shape[0]
