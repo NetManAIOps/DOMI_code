@@ -96,20 +96,9 @@ def get_data_eachday(path, dirPath, timeLength, metricNumber, norm):
 
         norm_matrix = (matrix - m_mean) / m_std
         norm_matrix = np.where(np.isnan(norm_matrix), 0, norm_matrix)
-
-        norm_matrix1 = norm_matrix[:, :, 0:5]
-        maxSTD = 2.5
-        norm_matrix1 = np.where(norm_matrix1 > maxSTD * 8, maxSTD * 8, norm_matrix1)
-        norm_matrix1 = np.where(norm_matrix1 < -1 * maxSTD * 8, -1 * maxSTD * 8, norm_matrix1)
-        norm_matrix1 = (norm_matrix1 + maxSTD * 8) / (2.0 * maxSTD * 8)
-
-        norm_matrix2 = norm_matrix[:, :, 5:19]
-        norm_matrix2 = np.where(norm_matrix2 > maxSTD, maxSTD, norm_matrix2)
-        norm_matrix2 = np.where(norm_matrix2 < -1 * maxSTD, -1 * maxSTD, norm_matrix2)
-        norm_matrix2 = (norm_matrix2 + maxSTD) / (2.0 * maxSTD)
-
-        norm_matrix = np.concatenate([norm_matrix1, norm_matrix2], -1)
-        norm_matrix = np.where(np.isnan(norm_matrix), 0, norm_matrix)
+        norm_matrix = np.where(norm_matrix > 2.5, 2.5, norm_matrix)
+        norm_matrix = np.where(norm_matrix < -2.5, -2.5, norm_matrix)
+        norm_matrix = (norm_matrix + 2.5) / 5.0
         norm_matrix = np.around(norm_matrix, decimals=2)
         norm_matrix = norm_matrix.reshape(-1, timeLength*metricNumber)
         return norm_matrix.tolist(), path, norm_matrix.shape[0]
