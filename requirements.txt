@@ -3,7 +3,7 @@ numpy == 1.15.4
 pandas == 0.23.4
 scipy == 1.2.0
 scikit_learn == 0.20.2
-tensorflow == 1.14.0
+tensorflow == 2.11.1
 tensorflow_estimator == 1.14.0
 git+https://github.com/thu-ml/zhusuan.git
 git+https://github.com/haowen-xu/tfsnippet.git@v0.2.0-alpha4
